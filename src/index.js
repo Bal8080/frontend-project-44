@@ -2,6 +2,7 @@ import { getName } from "../src/cli.js";
 import { brainEven} from "./even.js";
 import { brainCalc } from "./calc.js";
 import { brainGcd } from "./gcd.js";
+import { brainProgression } from "./progression.js"
 
 export const runCalc = () => {
   brainBase(brainCalc);
@@ -13,6 +14,10 @@ export const runEven = () => {
 
 export const runGcd = () => {
   brainBase(brainGcd);
+}
+
+export const runProgression = () => {
+  brainBase(brainProgression);
 }
 
 const brainBase = (funcBrain) => {
