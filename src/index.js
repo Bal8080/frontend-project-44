@@ -1,6 +1,7 @@
 import { getName } from "../src/cli.js";
 import { brainEven} from "./even.js";
 import { brainCalc } from "./calc.js";
+import { brainGsd } from "./gsd.js";
 
 export const runCalc = () => {
   brainBase(brainCalc);
@@ -10,12 +11,15 @@ export const runEven = () => {
   brainBase(brainEven);
 }
 
-
+export const runGsd = () => {
+  brainBase(brainGsd);
+}
 
 const brainBase = (funcBrain) => {
     const name = getName();
     const brainList = {
-        brainEven: 'Answer "yes" if the number is even, otherwise answer "no".', brainCalc: 'What is the result of the expression?'
+        brainEven: 'Answer "yes" if the number is even, otherwise answer "no".', brainCalc: 'What is the result of the expression?',
+        brainGsd: 'Find the greatest common divisor of given numbers.'
     };
 
     console.log(brainList[funcBrain.name]);
