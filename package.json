@@ -13,7 +13,7 @@
     "brain-even": "bin/brain-even.js",
     "brain-games": "bin/brain-games.js",
     "brain-calc": "bin/brain-calc.js",
-    "brain-gsd": "bin/brain-gsd.js"
+    "brain-gcd": "bin/brain-gcd.js"
   },
   "dependencies": {
     "readline-sync": "^1.4.10"

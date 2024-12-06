@@ -1,6 +1,6 @@
 import readlineSync from "readline-sync";
 
-export const brainGsd = () => {
+export const brainGcd = () => {
     const minRandom = 1;
     const maxRandom = 100;
     let randomNumber1 = Math.floor(Math.random() * (maxRandom - minRandom)) + minRandom + 1;

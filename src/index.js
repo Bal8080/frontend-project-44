@@ -1,7 +1,7 @@
 import { getName } from "../src/cli.js";
 import { brainEven} from "./even.js";
 import { brainCalc } from "./calc.js";
-import { brainGsd } from "./gsd.js";
+import { brainGcd } from "./gcd.js";
 
 export const runCalc = () => {
   brainBase(brainCalc);
@@ -11,8 +11,8 @@ export const runEven = () => {
   brainBase(brainEven);
 }
 
-export const runGsd = () => {
-  brainBase(brainGsd);
+export const runGcd = () => {
+  brainBase(brainGcd);
 }
 
 const brainBase = (funcBrain) => {
