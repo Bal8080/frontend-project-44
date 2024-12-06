@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { brainBase, brainEven } from "../src/index.js";
+import { runEven } from "../src/index.js";
 
-brainBase(brainEven);
+runEven();
