@@ -2,7 +2,8 @@ import { getName } from "../src/cli.js";
 import { brainEven} from "./even.js";
 import { brainCalc } from "./calc.js";
 import { brainGcd } from "./gcd.js";
-import { brainProgression } from "./progression.js"
+import { brainProgression } from "./progression.js";
+import { brainPrime } from "./prime.js";
 
 export const runCalc = () => {
   brainBase(brainCalc);
@@ -20,13 +21,18 @@ export const runProgression = () => {
   brainBase(brainProgression);
 }
 
+export const runPrime = () => {
+  brainBase(brainPrime);
+}
+
 const brainBase = (funcBrain) => {
     const name = getName();
     const brainList = {
         brainEven: 'Answer "yes" if the number is even, otherwise answer "no".',
         brainCalc: 'What is the result of the expression?', 
         brainGsd: 'Find the greatest common divisor of given numbers.',
-        brainProgression: 'What number is missing in the progression?'
+        brainProgression: 'What number is missing in the progression?',
+        brainPrime: 'Answer "yes" if given number is prime. Otherwise answer "no".'
     };
 
     console.log(brainList[funcBrain.name]);
