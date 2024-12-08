@@ -3,8 +3,8 @@ import readlineSync from "readline-sync";
 export const brainGcd = () => {
     const minRandom = 1;
     const maxRandom = 100;
-    let randomNumber1 = Math.floor(Math.random() * (maxRandom - minRandom)) + minRandom + 1;
-    let randomNumber2 = Math.floor(Math.random() * (maxRandom - minRandom)) + minRandom + 1;
+    let randomNumber1 = Math.floor(Math.random() * (maxRandom - minRandom + 1)) + minRandom;
+    let randomNumber2 = Math.floor(Math.random() * (maxRandom - minRandom + 1)) + minRandom;
     let num1 = randomNumber1;
     let num2 = randomNumber2;
 
