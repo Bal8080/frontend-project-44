@@ -30,7 +30,7 @@ const brainBase = (funcBrain) => {
     const brainList = {
         brainEven: 'Answer "yes" if the number is even, otherwise answer "no".',
         brainCalc: 'What is the result of the expression?', 
-        brainGsd: 'Find the greatest common divisor of given numbers.',
+        brainGcd: 'Find the greatest common divisor of given numbers.',
         brainProgression: 'What number is missing in the progression?',
         brainPrime: 'Answer "yes" if given number is prime. Otherwise answer "no".'
     };

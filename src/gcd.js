@@ -8,7 +8,7 @@ export const brainGcd = () => {
     let num1 = randomNumber1;
     let num2 = randomNumber2;
 
-
+    
     while (num1 && num2) {
         num1 > num2 ? num1 %= num2 : num2 %= num1;
     }

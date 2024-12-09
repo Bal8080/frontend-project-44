@@ -7,6 +7,7 @@ export const brainCalc = () => {
     const maxRandom = 100;
     const randomNumber1 = Math.floor(Math.random() * (maxRandom - minRandom + 1)) + minRandom;
     const randomNumber2 = Math.floor(Math.random() * (maxRandom - minRandom + 1)) + minRandom;
+    
     let correctAnswer;
     if (op === '+') {
       correctAnswer = randomNumber1 + randomNumber2;
@@ -21,4 +22,4 @@ export const brainCalc = () => {
     const userInputNumber = Number(userInput);
     const answer = (isNaN(userInputNumber)) ? userInput : userInputNumber
     return [correctAnswer, answer];
-  }
+}
