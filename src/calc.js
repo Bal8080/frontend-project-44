@@ -1,23 +1,22 @@
 import readlineSync from "readline-sync";
+import { getRandomNumber } from "./random.js";
 
 export const brainCalc = () => {
-    const opList = ['+', '-', '*'];
-    const op = opList[Math.floor(Math.random() * 3)];
-    const minRandom = 1;
-    const maxRandom = 100;
-    const randomNumber1 = Math.floor(Math.random() * (maxRandom - minRandom + 1)) + minRandom;
-    const randomNumber2 = Math.floor(Math.random() * (maxRandom - minRandom + 1)) + minRandom;
+    const operationsList = ['+', '-', '*'];
+    const operation = operationsList[Math.floor(Math.random() * operationsList.length)];
+    const randomNumber1 = getRandomNumber(1, 100);
+    const randomNumber2 = getRandomNumber(1, 100);
     
     let correctAnswer;
-    if (op === '+') {
+    if (operation === '+') {
       correctAnswer = randomNumber1 + randomNumber2;
-    } else if (op === '-') {
+    } else if (operation === '-') {
       correctAnswer = randomNumber1 - randomNumber2;
-    } else if (op === '*') {
+    } else if (operation === '*') {
       correctAnswer = randomNumber1 * randomNumber2;
     }
   
-    console.log(`Question: ${randomNumber1} ${op} ${randomNumber2}`);
+    console.log(`Question: ${randomNumber1} ${operation} ${randomNumber2}`);
     const userInput = readlineSync.question("Your answer: ");
     const userInputNumber = Number(userInput);
     const answer = (isNaN(userInputNumber)) ? userInput : userInputNumber

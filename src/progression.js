@@ -1,13 +1,10 @@
 import readlineSync from "readline-sync";
+import { getRandomNumber } from "./random.js";
 
 export const brainProgression = () => {
-    const minRandomElem = 1;
-    const maxRandomElem = 100;
-    const firstElem = Math.floor(Math.random() * (maxRandomElem - minRandomElem + 1)) + minRandomElem;
+    const firstElem = getRandomNumber(1, 100);
     const lenProgression = 7;
-    const minRandomDiff = 1;
-    const maxRandomDiff = 10;
-    const diffProgression = Math.floor(Math.random() * (maxRandomDiff - minRandomDiff + 1)) + minRandomDiff;
+    const diffProgression = getRandomNumber(1, 10);
     const randomElemIndex = Math.floor(Math.random() * lenProgression);
 
     const progression = [firstElem, ];

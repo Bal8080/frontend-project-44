@@ -1,24 +1,25 @@
 import readlineSync from "readline-sync";
+import { getRandomNumber } from "./random.js";
 
-export const brainPrime = () => {
-    const minRandom = 1;
-    const maxRandom = 100;
-    const randomNumber = Math.floor(Math.random() * (maxRandom - minRandom + 1)) + minRandom;
-    const temp = Math.sqrt(randomNumber);
-    let prime = true;
-
-    if (randomNumber === 1) {
-        prime = false;
-    } else {
-        for (let i = 2; i <= temp; i += 1) {
-            if (randomNumber % i === 0) {
-                prime = false;
-                break;
-            }
-        }
+const isPrime = (num) => {
+    const temp = Math.sqrt(num);
+    
+    if (num < 2) {
+        return false;
     }
 
-    const correctAnswer = prime ? "yes" : "no";
+    for (let i = 2; i <= temp; i += 1) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    
+    return true;
+}
+
+export const brainPrime = () => {
+    const randomNumber = getRandomNumber(1, 100);
+    const correctAnswer = isPrime(randomNumber) ? "yes" : "no";
     console.log(`Question: ${randomNumber}`);
     const answer = readlineSync.question("Your answer: ");
     return [correctAnswer, answer];
