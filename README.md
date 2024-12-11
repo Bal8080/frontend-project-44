@@ -5,7 +5,7 @@
 
 #### Even
 "Проверка на чётность". Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное.  
-[Установка пакета, запуск игры even, проигрыш](https://asciinema.org/a/3OreRmxTJGQRLWUgg1VVtsu7L)  
+[![asciicast](https://asciinema.org/a/3OreRmxTJGQRLWUgg1VVtsu7L)](https://asciinema.org/a/3OreRmxTJGQRLWUgg1VVtsu7L)  
 [победа](https://asciinema.org/a/kUdksZcqOxekcg5QGxIIlSQla)
 
 #### Calc
