@@ -5,8 +5,8 @@
 
 #### Even
 "Проверка на чётность". Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное.  
-[![asciicast](https://asciinema.org/a/3OreRmxTJGQRLWUgg1VVtsu7L)](https://asciinema.org/a/3OreRmxTJGQRLWUgg1VVtsu7L)  
-[победа](https://asciinema.org/a/kUdksZcqOxekcg5QGxIIlSQla)
+[![asciicast](https://asciinema.org/a/3OreRmxTJGQRLWUgg1VVtsu7L.svg)](https://asciinema.org/a/3OreRmxTJGQRLWUgg1VVtsu7L)  
+[![победа](https://asciinema.org/a/kUdksZcqOxekcg5QGxIIlSQla.svg)](https://asciinema.org/a/kUdksZcqOxekcg5QGxIIlSQla)
 
 #### Calc
 "Калькулятор". Суть игры в следующем: пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.  
