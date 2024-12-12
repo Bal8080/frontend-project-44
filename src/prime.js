@@ -1,24 +1,24 @@
 import { getRandomNumber } from "./random.js";
 
 const isPrime = (num) => {
-    const temp = Math.sqrt(num);
-    
-    if (num < 2) {
-        return false;
-    }
+  const temp = Math.sqrt(num);
 
-    for (let i = 2; i <= temp; i += 1) {
-        if (num % i === 0) {
-            return false;
-        }
+  if (num < 2) {
+    return false;
+  }
+
+  for (let i = 2; i <= temp; i += 1) {
+    if (num % i === 0) {
+      return false;
     }
-    
-    return true;
-}
+  }
+
+  return true;
+};
 
 export const brainPrime = () => {
-    const randomNumber = getRandomNumber(1, 100);
-    const correctAnswer = isPrime(randomNumber) ? "yes" : "no";
+  const randomNumber = getRandomNumber(1, 100);
+  const correctAnswer = isPrime(randomNumber) ? "yes" : "no";
 
-    return [correctAnswer, randomNumber]
-}
+  return [correctAnswer, randomNumber];
+};

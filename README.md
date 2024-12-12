@@ -37,4 +37,3 @@
 [![Запуск игры prime, проигрыш](https://asciinema.org/a/yK51VrZQFukKEQotZStpeL5ej.svg)](https://asciinema.org/a/yK51VrZQFukKEQotZStpeL5ej)  
 ###### Победа
 [![победа](https://asciinema.org/a/l6bjN7IyiXMnEeL2deku6RmAV.svg)](https://asciinema.org/a/l6bjN7IyiXMnEeL2deku6RmAV)
-

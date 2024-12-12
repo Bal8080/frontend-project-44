@@ -9,4 +9,3 @@ publish:
 
 lint:
 	npx eslint
-
