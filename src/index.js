@@ -4,6 +4,7 @@ import { brainCalc } from "./calc.js";
 import { brainGcd } from "./gcd.js";
 import { brainProgression } from "./progression.js";
 import { brainPrime } from "./prime.js";
+import readlineSync from "readline-sync";
 
 export const runCalc = () => {
   brainBase(brainCalc);
@@ -40,7 +41,11 @@ const brainBase = (funcBrain) => {
     const countGames = 3;
     let res = true;
     for (let i = 0; i < countGames; i++) {
-      const [correctAnswer, answer] = funcBrain();
+      const [correctAnswer, answerData] = funcBrain();
+      console.log(`Question: ${answerData}`);
+      const userInput = readlineSync.question("Your answer: ");
+      const userInputNumber = Number(userInput);
+      const answer = (isNaN(userInputNumber)) ? userInput : userInputNumber
       if (correctAnswer === answer) {
         console.log("Correct!");
       } else {

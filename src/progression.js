@@ -1,4 +1,3 @@
-import readlineSync from "readline-sync";
 import { getRandomNumber } from "./random.js";
 
 export const brainProgression = () => {
@@ -14,9 +13,6 @@ export const brainProgression = () => {
 
     const correctAnswer = progression[randomElemIndex];
     progression[randomElemIndex] = '..';
-    console.log(`Question: ${progression.join(' ')}`);
-    const userInput = readlineSync.question("Your answer: ");
-    const userInputNumber = Number(userInput);
-    const answer = (isNaN(userInputNumber)) ? userInput : userInputNumber
-    return [correctAnswer, answer];
+
+    return [correctAnswer, `${progression.join(' ')}`]
 }

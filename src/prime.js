@@ -1,4 +1,3 @@
-import readlineSync from "readline-sync";
 import { getRandomNumber } from "./random.js";
 
 const isPrime = (num) => {
@@ -20,7 +19,6 @@ const isPrime = (num) => {
 export const brainPrime = () => {
     const randomNumber = getRandomNumber(1, 100);
     const correctAnswer = isPrime(randomNumber) ? "yes" : "no";
-    console.log(`Question: ${randomNumber}`);
-    const answer = readlineSync.question("Your answer: ");
-    return [correctAnswer, answer];
+
+    return [correctAnswer, randomNumber]
 }
