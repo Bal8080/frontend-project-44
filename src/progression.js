@@ -1,6 +1,6 @@
-import { getRandomNumber } from "./random.js";
+import { getRandomNumber } from './random.js';
 
-export const brainProgression = () => {
+export const Progression = () => {
   const firstElem = getRandomNumber(1, 100);
   const lenProgression = 7;
   const diffProgression = getRandomNumber(1, 10);
@@ -12,7 +12,7 @@ export const brainProgression = () => {
   }
 
   const correctAnswer = progression[randomElemIndex];
-  progression[randomElemIndex] = "..";
+  progression[randomElemIndex] = '..';
 
-  return [correctAnswer, `${progression.join(" ")}`];
+  return [correctAnswer, `${progression.join(' ')}`];
 };

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { runEven } from "../src/index.js";
+import { runEven } from '../src/index.js';
 
 runEven();
