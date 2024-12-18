@@ -1,8 +1,9 @@
 import { getRandomNumber } from './random.js';
 
+const lenProgression = 7;
+
 export const Progression = () => {
   const firstElem = getRandomNumber(1, 100);
-  const lenProgression = 7;
   const diffProgression = getRandomNumber(1, 10);
   const randomElemIndex = Math.floor(Math.random() * lenProgression);
 
