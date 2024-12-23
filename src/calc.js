@@ -4,8 +4,7 @@ const getTextQuestion = (randomNumber1, randomNumber2, operation) => `${randomNu
 
 const Calc = () => {
   const operationsList = ['+', '-', '*'];
-  const operation =
-    operationsList[Math.floor(Math.random() * operationsList.length)];
+  const operation = operationsList[Math.floor(Math.random() * operationsList.length)];
   const randomNumber1 = getRandomNumber(1, 100);
   const randomNumber2 = getRandomNumber(1, 100);
 
@@ -27,7 +26,6 @@ const Calc = () => {
       getTextQuestion(randomNumber1, randomNumber2, operation),
     ];
   }
-  return
 };
 
 export default Calc;
