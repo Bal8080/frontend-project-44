@@ -1,4 +1,4 @@
-import { getRandomNumber } from './random.js';
+import getRandomNumber from './random.js';
 
 const isPrime = (num) => {
   const temp = Math.sqrt(num);
@@ -16,9 +16,11 @@ const isPrime = (num) => {
   return true;
 };
 
-export const Prime = () => {
+const Prime = () => {
   const randomNumber = getRandomNumber(1, 100);
   const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
 
   return [correctAnswer, randomNumber];
 };
+
+export default Prime;

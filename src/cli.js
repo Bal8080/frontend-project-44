@@ -7,4 +7,4 @@ const getName = () => {
   return name;
 };
 
-export { getName };
+export default getName;

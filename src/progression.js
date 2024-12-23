@@ -1,8 +1,8 @@
-import { getRandomNumber } from './random.js';
+import getRandomNumber from './random.js';
 
 const lenProgression = 7;
 
-export const Progression = () => {
+const Progression = () => {
   const firstElem = getRandomNumber(1, 100);
   const diffProgression = getRandomNumber(1, 10);
   const randomElemIndex = Math.floor(Math.random() * lenProgression);
@@ -17,3 +17,5 @@ export const Progression = () => {
 
   return [correctAnswer, `${progression.join(' ')}`];
 };
+
+export default Progression;

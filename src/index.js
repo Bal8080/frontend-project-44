@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
-import { getName } from './cli.js';
-import { Even } from './even.js';
-import { Calc } from './calc.js';
-import { Gcd } from './gcd.js';
-import { Progression } from './progression.js';
-import { Prime } from './prime.js';
+import getName from './cli.js';
+import Even from './even.js';
+import Calc from './calc.js';
+import Gcd from './gcd.js';
+import Progression from './progression.js';
+import Prime from './prime.js';
 
 const countGames = 3;
 
@@ -24,7 +24,7 @@ const Base = (funcBrain) => {
     console.log(`Question: ${answerData}`);
     const userInput = readlineSync.question('Your answer: ');
     const userInputNumber = Number(userInput);
-    const answer = isNaN(userInputNumber) ? userInput : userInputNumber;
+    const answer = Number.isNaN(userInputNumber) ? userInput : userInputNumber;
     if (correctAnswer === answer) {
       console.log('Correct!');
     }
